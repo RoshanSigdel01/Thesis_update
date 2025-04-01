@@ -1,0 +1,310 @@
+
+     Program PWSCF v.5.1 starts on 12Jan2023 at  8: 3:12 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    16 processors
+     R & G space division:  proc/nbgrp/npool/nimage =      16
+     Waiting for input...
+     Reading input from standard input
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+
+     Atomic positions and unit cell read from directory:
+     ./out/aiida.save/
+
+               file C.pbesol-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  2S 2P renormalized
+               file H.pbesol-kjpaw_psl.0.1.UPF: wavefunction(s)  1S renormalized
+               file N.pbesol-n-kjpaw_psl.0.1.UPF: wavefunction(s)  2P renormalized
+               file O.pbesol-n-kjpaw_psl.0.1.UPF: wavefunction(s)  2P renormalized
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     scalapack distributed-memory algorithm (size of sub-group:  2*  2 procs)
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        1812     905    238               232514    82195   11094
+     Max        1813     906    239               232519    82231   11097
+     Sum       29005   14485   3809              3720285  1315387  177509
+
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =      22.5090  a.u.
+     unit-cell volume          =   11404.2970 (a.u.)^3
+     number of atoms/cell      =           44
+     number of atomic types    =            4
+     number of electrons       =       118.00
+     number of Kohn-Sham states=          100
+     kinetic-energy cutoff     =      90.0000  Ry
+     charge density cutoff     =     720.0000  Ry
+     Exchange-correlation      =  SLA  PW   PSX  PSC ( 1  4 10  8 0)
+
+     celldm(1)=  22.508999  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for  C read from file:
+     ./pseudo/C.pbesol-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: 5f3a56537b2bcef3348431d8311bb923
+     Pseudo is Projector augmented-wave + core cor, Zval =  4.0
+     Generated using "atomic" code by A. Dal Corso  v.6.0 svn rev. 13079
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1073 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 2 for  H read from file:
+     ./pseudo/H.pbesol-kjpaw_psl.0.1.UPF
+     MD5 check sum: 27a6b98f1514c59d399e798f1258b8b7
+     Pseudo is Projector augmented-wave, Zval =  1.0
+     Generated using "atomic" code by A. Dal Corso  v.5.0.2 svn rev. 9415
+     Shape of augmentation charge: PSQ
+     Using radial grid of  929 points,  2 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 3 for  N read from file:
+     ./pseudo/N.pbesol-n-kjpaw_psl.0.1.UPF
+     MD5 check sum: 15bd223d5d75e9eda893d0f4e6bdad1b
+     Pseudo is Projector augmented-wave + core cor, Zval =  5.0
+     Generated using "atomic" code by A. Dal Corso  v.6.3
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1085 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 4 for  O read from file:
+     ./pseudo/O.pbesol-n-kjpaw_psl.0.1.UPF
+     MD5 check sum: 81d73d1479e654e5638b0319f0d6c2c7
+     Pseudo is Projector augmented-wave + core cor, Zval =  6.0
+     Generated using "atomic" code by A. Dal Corso  v.6.0 svn rev. 13079
+     Shape of augmentation charge: BESSEL
+     Using radial grid of 1095 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01070      C( 1.00)
+        H              1.00     1.00794      H( 1.00)
+        N              5.00    14.00670      N( 1.00)
+        O              6.00    15.99940      O( 1.00)
+
+     No symmetry found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           H   tau(   1) = (   0.7510869   0.9014794   0.6773038  )
+         2           H   tau(   2) = (   0.6221551   0.8621480   0.6466093  )
+         3           H   tau(   3) = (   0.8228430   0.7195913   0.6566218  )
+         4           H   tau(   4) = (   0.7648129   0.6835805   0.4414391  )
+         5           H   tau(   5) = (   0.6662958   0.6148206   0.7265203  )
+         6           H   tau(   6) = (   0.7188018   0.5647337   0.5943192  )
+         7           H   tau(   7) = (   0.5191479   0.5811151   0.5995173  )
+         8           H   tau(   8) = (   0.7460176   0.2742689   0.4083733  )
+         9           H   tau(   9) = (   0.5471391   0.2524535   0.3833532  )
+        10           H   tau(  10) = (   0.6997127   0.1621923   0.1985375  )
+        11           H   tau(  11) = (   0.4863559   0.3192270   0.1778568  )
+        12           H   tau(  12) = (   0.6066707   0.4073875   0.1913917  )
+        13           H   tau(  13) = (   0.5145466   0.4641752   0.3879819  )
+        14           H   tau(  14) = (   0.3893733   0.4067730   0.3281503  )
+        15           H   tau(  15) = (   0.7070998   0.4011666   0.3674073  )
+        16           H   tau(  16) = (   0.3549057   0.6453923   0.1456097  )
+        17           H   tau(  17) = (   0.2965975   0.5202420   0.1946041  )
+        18           H   tau(  18) = (   0.1889937   0.4016012   0.8328142  )
+        19           H   tau(  19) = (   0.3633311   0.3217426   0.7884870  )
+        20           H   tau(  20) = (   0.2813743   0.4718644   0.5950439  )
+        21           H   tau(  21) = (   0.3780816   0.2117997   0.6038440  )
+        22           H   tau(  22) = (   0.2715491   0.1579124   0.6945801  )
+        23           H   tau(  23) = (   0.2332915   0.2452036   0.5788442  )
+        24           H   tau(  24) = (   0.1409249   0.2922897   0.7614443  )
+        25           C   tau(  25) = (   0.7394860   0.7403971   0.6203908  )
+        26           C   tau(  26) = (   0.7632028   0.7608765   0.4960127  )
+        27           C   tau(  27) = (   0.6711527   0.6339670   0.6355860  )
+        28           C   tau(  28) = (   0.6025404   0.2746581   0.3115703  )
+        29           C   tau(  29) = (   0.6159105   0.1691660   0.2414229  )
+        30           C   tau(  30) = (   0.5414044   0.3616933   0.2388632  )
+        31           C   tau(  31) = (   0.4717159   0.4445881   0.3082598  )
+        32           C   tau(  32) = (   0.4615196   0.5550267   0.2458985  )
+        33           C   tau(  33) = (   0.3029620   0.3348667   0.7191169  )
+        34           C   tau(  34) = (   0.3477611   0.4287532   0.6462786  )
+        35           C   tau(  35) = (   0.2973099   0.2310733   0.6441743  )
+        36           N   tau(  36) = (   0.6958011   0.8356955   0.6820091  )
+        37           N   tau(  37) = (   0.7118058   0.3186302   0.3435635  )
+        38           N   tau(  38) = (   0.3629705   0.5733738   0.1905902  )
+        39           N   tau(  39) = (   0.1903216   0.3621852   0.7566026  )
+        40           O   tau(  40) = (   0.7825060   0.8526400   0.4563791  )
+        41           O   tau(  41) = (   0.5643278   0.6492424   0.5868272  )
+        42           O   tau(  42) = (   0.5424679   0.0998896   0.2291005  )
+        43           O   tau(  43) = (   0.5397167   0.6217996   0.2425347  )
+        44           O   tau(  44) = (   0.4464332   0.4549481   0.6409555  )
+
+     number of k points=   174
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:  3720285 G-vectors     FFT dimensions: ( 200, 200, 200)
+
+     Smooth grid:  1315387 G-vectors     FFT dimensions: ( 135, 135, 135)
+
+     Largest allocated arrays     est. size (Mb)     dimensions
+        Kohn-Sham Wavefunctions        15.78 Mb     (   10340,  100)
+        NL pseudopotentials            32.82 Mb     (   10340,  208)
+        Each V/rho on FFT grid          7.93 Mb     (  520000)
+        Each G-vector array             1.77 Mb     (  232519)
+        G-vector shells                 0.06 Mb     (    7628)
+     Largest temporary arrays     est. size (Mb)     dimensions
+        Auxiliary wavefunctions        63.11 Mb     (   10340,  400)
+        Each subspace H/S matrix        0.61 Mb     (     200,  200)
+        Each <psi_i|beta_j> matrix      0.32 Mb     (     208,  100)
+
+     The potential is recalculated from file :
+     ./out/aiida.save/charge-density.dat
+
+
+     negative rho (up, down):  1.774E-04 0.000E+00
+     Starting wfc are  104 randomized atomic wfcs
+     Checking if some PAW data can be deallocated... 
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+
+     ethr =  8.47E-12,  avg # of iterations = 97.0
+
+     total cpu time spent up to now is    97516.7 secs
+
+     End of band structure calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     Writing output data file aiida.save
+
+     init_run     :     15.86s CPU     20.65s WALL (       1 calls)
+     electrons    :  67164.33s CPU  97494.08s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     potinit      :      1.92s CPU      2.91s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :  67164.33s CPU  97494.04s WALL (       1 calls)
+     v_of_rho     :      1.12s CPU      1.74s WALL (       1 calls)
+     newd         :      5.60s CPU      6.37s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      5.29s CPU      8.06s WALL (     174 calls)
+     cegterg      :  65608.19s CPU  95172.34s WALL (     896 calls)
+
+     Called by *egterg:
+     h_psi        :  28325.77s CPU  43456.71s WALL (   17954 calls)
+     s_psi        :   5917.74s CPU   6954.23s WALL (   17954 calls)
+     g_psi        :     46.57s CPU     57.58s WALL (   16884 calls)
+     cdiaghg      :   2298.57s CPU   4306.62s WALL (   17058 calls)
+
+     Called by h_psi:
+     add_vuspsi   :   6023.27s CPU   7196.37s WALL (   17954 calls)
+
+     General routines
+     calbec       :   6007.80s CPU   8118.52s WALL (   17954 calls)
+     fft          :      1.00s CPU      1.66s WALL (      13 calls)
+     ffts         :      0.05s CPU      0.08s WALL (       1 calls)
+     fftw         :  13523.23s CPU  24969.43s WALL ( 1020400 calls)
+     interpolate  :      0.14s CPU      0.18s WALL (       1 calls)
+     davcio       :      0.09s CPU      8.46s WALL (     174 calls)
+
+     Parallel routines
+     fft_scatter  :   8018.18s CPU  18853.38s WALL ( 1020414 calls)
+
+     PAW routines
+     PAW_pot      :      0.14s CPU      0.29s WALL (       1 calls)
+
+     PWSCF        :     0d   18h39m CPU        1d    3h 8m WALL
+
+
+   This run was terminated on:  11:11:38  13Jan2023            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
