@@ -1,0 +1,37 @@
+
+     Program DOS v.5.1 starts on 10Jan2023 at 21:25: 2 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     8 processors
+     R & G space division:  proc/nbgrp/npool/nimage =       8
+
+   Info: using nr1, nr2, nr3 values from input
+
+   Info: using nr1s, nr2s, nr3s values from input
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation      =  SLA  PW   PSX  PSC ( 1  4 10  8 0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+               file C.pbesol-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  2S 2P renormalized
+               file H.pbesol-kjpaw_psl.0.1.UPF: wavefunction(s)  1S renormalized
+               file N.pbesol-n-kjpaw_psl.0.1.UPF: wavefunction(s)  2P renormalized
+               file O.pbesol-n-kjpaw_psl.0.1.UPF: wavefunction(s)  2P renormalized
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         730     366    100                41994    14868    2180
+     Max         731     367    101                41997    14885    2184
+     Sum        5845    2933    805               335971   119009   17461
+
+
+     Tetrahedra used
+

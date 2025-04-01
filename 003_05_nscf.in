@@ -1,0 +1,50 @@
+ &CONTROL
+   calculation     = 'nscf' 
+   outdir          = './out/' 
+   pseudo_dir      = './pseudo/' 
+   prefix          = 'aiida' 
+   verbosity       = 'high' 
+   etot_conv_thr   = 1d-07 
+   forc_conv_thr   = 1d-04 
+ /
+ &SYSTEM
+   ibrav           = 0
+   nat             = 13
+   ntyp            = 4
+   ecutwfc         = 100
+   ecutrho         = 800
+   nbnd            = 100
+   occupations     = 'tetrahedra' 
+   degauss         = 0.001 
+   smearing        = 'gaussian'    
+ /
+ &ELECTRONS
+   electron_maxstep = 200
+   conv_thr        = 1d-08
+   mixing_beta     = 0.4
+ /
+CELL_PARAMETERS angstrom 
+     5.070000000    0.000000000    0.000000000 
+     0.000000000    5.070000000    0.000000000 
+     0.000000000    0.000000000    5.070000000 
+ATOMIC_SPECIES
+    C   12.01070  C.pbesol-n-kjpaw_psl.1.0.0.UPF 
+    H    1.00794  H.pbesol-kjpaw_psl.0.1.UPF
+    N   14.00670  N.pbesol-n-kjpaw_psl.0.1.UPF
+    O   15.99940  O.pbesol-n-kjpaw_psl.0.1.UPF 
+ATOMIC_POSITIONS (crystal)
+H        0.405067022   0.767743359   0.839534154
+H        0.335116791   0.835571563   0.510828874
+H        0.771542001   0.577410818   0.732622266
+H        0.873980268   0.428892677   0.257220024
+H        0.462975043   0.203731101   0.831994503
+H        0.679657610   0.095653352   0.582835672
+H        0.167174277   0.332161498   0.487894228
+C        0.609012452   0.534732633   0.592193203
+C        0.719477358   0.575031435   0.317878055
+C        0.527189856   0.245350874   0.625644384
+N        0.380545134   0.694205604   0.652160491
+O        0.644453985   0.743622088   0.158043211
+O        0.321639203   0.195284997   0.439651935   
+K_POINTS automatic 
+  14 14 14   0 0 0 

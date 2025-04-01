@@ -1,0 +1,8 @@
+ &PROJWFC
+   prefix          = 'aiida' 
+   outdir          = './out/' 
+   filpdos         = 'pdos' 
+   filproj         = 'proj' 
+   DeltaE          = 0.001 
+ /
+
